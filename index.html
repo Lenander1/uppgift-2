@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>HEJ</p>
+   
+<script>  
+//part 2a of assignment 
+let list = ["O", "X"]
+
+for (let count = 0; count <= 10; count++) 
+{if  (count == 4)
+console.log("Q")
+ else 
+if (count % 2 == 0)
+console.log (list[0]) 
+else 
+console.log (list[1])
+}
+
+ 
+//part 2b of assignment
+
+// Fattar inte vad jag gjort fel
+// Varför fungerar inte min kod?
+
+let resultat = ""
+for (let i = 0; i <= 20; i++) {
+    resultat += "O"
+
+    let random = Math.random()*5
+    let heltal = Math.round(random)
+   
+    for (let j = 0; j < heltal; j++) {
+        resultat += " "
+         console.log(resultat);
+    }
+
+}
+
+
+// part 2 c of assignment 
+
+ let cityNames = ["kiruna", "uppsala", "stockholm", "lund", "malmö"]
+
+  for (let y = 0; y <= cityNames.length; y++) {
+let city = cityNames[y]
+    for (let y = 0; y < city.length; y++) {
+        if (city[0]) {
+            city = city.charAt(0).toUpperCase() + city.slice(1);
+        }   
+        console.log(city[y]);
+    }
+  }
+
+
+
+</script>
+
+</body>
+ 
+</html>
