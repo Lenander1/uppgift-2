@@ -25,22 +25,22 @@ console.log (list[1])
  
 //part 2b of assignment
 
-// Fattar inte vad jag gjort fel
-// Varför fungerar inte min kod?
 
-let resultat = ""
+let resultat = "";
+
 for (let i = 0; i <= 20; i++) {
-    resultat += "O"
+    let antalspace = Math.ceil(Math.random()*5);
 
-    let random = Math.random()*5
-    let heltal = Math.round(random)
-   
-    for (let j = 0; j < heltal; j++) {
-        resultat += " "
-         console.log(resultat);
+mellanrum = "";
+
+    for (let j = 0; j < antalspace; j++) {
+        mellanrum += " "
+    
     }
+resultat += mellanrum + "O"
+    
+}       console.log(resultat);
 
-}
 
 
 // part 2 c of assignment 
